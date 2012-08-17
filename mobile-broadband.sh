@@ -29,7 +29,7 @@ start)
 	nmcli -t nm wwan on
 	echo "Connecting " $defaultConnection  
 	nmcli -t con up uuid $defaultConnectionsUUID
-	echo "Successfully Connected"
+	echo "Done!"
 ;;
 
 stop)
@@ -56,11 +56,11 @@ status)
 	echo "IMPORTANT!"
  	echo "Edit this script to replace the values for defaultConnection and defaultConnectionsUUID with your gsm connection details"
 	echo "We found the following Connections list (ONLY GSM TYPE) for your system"
-	echo ==================================
-	echo Connection list
-	echo ==================================
-	echo ID UUID TYPE                                  
-	echo ----------------------------------
+	echo "=================================="
+	echo "Connection list"
+	echo "=================================="
+	echo "ID UUID TYPE"                                  
+	echo "----------------------------------"
 	nmcli -p -f NAME,UUID,TYPE con | grep gsm
       	exit 1
 esac
