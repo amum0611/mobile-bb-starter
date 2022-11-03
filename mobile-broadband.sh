@@ -3,7 +3,7 @@
 
 # To get the connection name (id) and connection uuid, execute the following command
 # nmcli -p con
-# Replace defaultConnection and defaultConnectionsUUID with your own settings
+# Replace defaultConnection and defaultConnectionsUUID with your own settings 
 
 defaultConnection="Dialog GSM Postpaid"
 defaultConnectionsUUID=daad515c-b1e7-4a5c-a139-669a1d28304a
